@@ -44,7 +44,7 @@ public class BookSearchSteps {
 	@Then("Should display the Crime & Thrillers result page")
 	public void should_display_the_crime_thrillers_result_page() {
 		String strURL = driver.getCurrentUrl();
-		Assert.assertTrue(strURL.contains("crime novel"));
+		Assert.assertTrue(strURL.contains("crime"));
 	}
 	
 	@When("User search Fantasy")

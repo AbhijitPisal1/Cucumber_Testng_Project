@@ -1,78 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-09T17:31:46 IST" name="Default suite" finished-at="2025-04-09T17:32:05 IST" duration-ms="19167">
+  <suite started-at="2025-04-10T17:43:54 IST" name="Default suite" finished-at="2025-04-10T17:43:57 IST" duration-ms="2990">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.BookSearchRunner@6e535154]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CRMRunner@6e535154]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-09T17:31:46 IST" name="Default test" finished-at="2025-04-09T17:32:05 IST" duration-ms="19167">
-      <class name="runners.BookSearchRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.BookSearchRunner@6e535154]" started-at="2025-04-09T17:31:46 IST" name="setUpClass" finished-at="2025-04-09T17:31:48 IST" duration-ms="1409" status="PASS">
+    <test started-at="2025-04-10T17:43:54 IST" name="Default test" finished-at="2025-04-10T17:43:57 IST" duration-ms="2990">
+      <class name="runners.CRMRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CRMRunner@6e535154]" started-at="2025-04-10T17:43:54 IST" name="setUpClass" finished-at="2025-04-10T17:43:54 IST" duration-ms="821" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4293e066]]>
+                <![CDATA[org.testng.TestRunner@1416a80a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.BookSearchRunner@6e535154]" started-at="2025-04-09T17:31:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-09T17:31:57 IST" duration-ms="9034" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CRMRunner@6e535154]" started-at="2025-04-10T17:43:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-10T17:43:55 IST" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Novels & Stories Search Test"]]>
+                <![CDATA["Create a new Contact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Book Search for danube-webshop"]]>
+                <![CDATA["Contacts CRUD Management"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.BookSearchRunner@6e535154]" started-at="2025-04-09T17:31:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-09T17:32:04 IST" duration-ms="7818" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CRMRunner@6e535154]" started-at="2025-04-10T17:43:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-10T17:43:55 IST" duration-ms="21" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Crime & Thrillers Search Test"]]>
+                <![CDATA["Create a new Deal"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Book Search for danube-webshop"]]>
+                <![CDATA["Deals CRUD Management"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at stepDefinitions.BookSearchSteps.should_display_the_crime_thrillers_result_page(BookSearchSteps.java:47)
-at ✽.Should display the Crime & Thrillers result page(file:///C:/workspace/Cucumber_Testng_Project/./src/test/resources/features/BookSearch.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.BookSearchRunner@6e535154]" started-at="2025-04-09T17:32:04 IST" name="tearDownClass" finished-at="2025-04-09T17:32:05 IST" duration-ms="837" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CRMRunner@6e535154]" started-at="2025-04-10T17:43:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-10T17:43:55 IST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View a Deal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Deals CRUD Management"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CRMRunner@6e535154]" started-at="2025-04-10T17:43:55 IST" name="tearDownClass" finished-at="2025-04-10T17:43:57 IST" duration-ms="1893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.BookSearchRunner -->
+      </class> <!-- runners.CRMRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
