@@ -1,6 +1,7 @@
-
+@PhaseTwo
 Feature: Tasks CRUD Management
 
+@SmokeTest
 Scenario: Create a new Tasks
 	Given User is logged in
 	When User create a new Tasks

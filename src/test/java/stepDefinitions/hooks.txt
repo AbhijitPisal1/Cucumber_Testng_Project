@@ -1,0 +1,48 @@
+Hooks in Cucumber are blocks of code that run before or after scenarios.
+They allow setup and teardown logic to be defined for test execution
+
+Method		Description
+@Before		Runs before each scenario. Used for setup.
+@After		Runs after each scenario. Used for teardown.
+@BeforeStep	Runs before each step in a scenario.
+@AfterStep	Runs after each step in a scenario.
+@BeforeAll	Runs once before all scenarios in the test run. Static.
+@AfterAll	Runs once after all scenarios in the test run. Static.
+
+
+* 
+Hooks of the same type (e.g., multiple @Before) run in undefined (random) order unless order is specified.
+
+@Before(order = 1)
+@Before(order = 2) // runs after order = 1
+
+*
+Tagged Hooks : Hooks can be limited to scenarios with specific tags.
+
+@Before("@smoke")
+public void setupSmokeTests() { ... }
+
+
+Feature		:	Cucumber Hooks
+Purpose		:	Code execution before/after scenario or step
+Usage		:	Setup/teardown logic
+Syntax		:	@Before, @After, etc.
+Granularity	:	Scenario or Step level
+Execution 	:	Runs automatically based on placement and tags
+Languages	:	Cucumber (Java, JS, etc.)
+
+Feature		:	Cucumber Tags
+Purpose		:	Filter or group scenarios for selective execution
+Usage		:	Scenario selection (@smoke, @regression)
+Syntax		:	@tag (in .feature files)
+Granularity	:	Scenario or Feature level
+Execution 	:	Only affect which scenarios run
+Languages	:	Cucumber Gherkin syntax
+
+Feature		:	TestNG Annotations
+Purpose		:	Define Lifecycle methods and test behavior
+Usage		:	Manage test flow (@BeforeMethod, @Test)
+Syntax		:	@BeforeClass, @Test, etc.
+Granularity	:	Class, method, or suite level
+Execution 	:	Controls when/how test methods run
+Languages	:	Java (TestNG)
