@@ -1,4 +1,4 @@
-## Cucumber TestNG Project for Danub Webshop Book Search Functionality
+## Cucumber TestNG Project for Danube Webshop Book Search Functionality
 
 Welcome to the **Cucumber_Testng_Project** repository! This project is designed to help you understand and implement **Cucumber BDD** tests with **TestNG** for automating the **book search functionality** of the **Danub Webshop**. It uses **Cucumber** for behavior-driven development (BDD) with **TestNG** for test execution. 
 
